@@ -1,7 +1,6 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.5": {},
     ".NETStandard,Version=v2.0": {
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
@@ -176,7 +175,6 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.5": [],
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3"
     ]
@@ -194,7 +192,6 @@
       "packagesPath": "C:\\Users\\Micha\\.nuget\\packages\\",
       "outputPath": "E:\\SVN\\Github\\CefGlue.Gtk\\CefGlue\\obj\\",
       "projectStyle": "PackageReference",
-      "crossTargeting": true,
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
@@ -204,7 +201,6 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net45",
         "netstandard2.0"
       ],
       "sources": {
@@ -215,10 +211,6 @@
         "https://f.feedz.io/videolan/preview/nuget/index.json": {}
       },
       "frameworks": {
-        "net45": {
-          "targetAlias": "net45",
-          "projectReferences": {}
-        },
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {}
@@ -231,10 +223,6 @@
       }
     },
     "frameworks": {
-      "net45": {
-        "targetAlias": "net45",
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
-      },
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {

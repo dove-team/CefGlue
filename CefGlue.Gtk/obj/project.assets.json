@@ -2,6 +2,83 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "AtkSharp/3.24.24.38": {
+        "type": "package",
+        "dependencies": {
+          "GLibSharp": "3.24.24.38"
+        },
+        "compile": {
+          "lib/netstandard2.0/AtkSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AtkSharp.dll": {}
+        }
+      },
+      "CairoSharp/3.24.24.38": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CairoSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CairoSharp.dll": {}
+        }
+      },
+      "GdkSharp/3.24.24.38": {
+        "type": "package",
+        "dependencies": {
+          "CairoSharp": "3.24.24.38",
+          "GLibSharp": "3.24.24.38",
+          "GioSharp": "3.24.24.38",
+          "PangoSharp": "3.24.24.38"
+        },
+        "compile": {
+          "lib/netstandard2.0/GdkSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GdkSharp.dll": {}
+        }
+      },
+      "GioSharp/3.24.24.38": {
+        "type": "package",
+        "dependencies": {
+          "GLibSharp": "3.24.24.38"
+        },
+        "compile": {
+          "lib/netstandard2.0/GioSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GioSharp.dll": {}
+        }
+      },
+      "GLibSharp/3.24.24.38": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/GLibSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GLibSharp.dll": {}
+        }
+      },
+      "GtkSharp/3.24.24.38": {
+        "type": "package",
+        "dependencies": {
+          "AtkSharp": "3.24.24.38",
+          "CairoSharp": "3.24.24.38",
+          "GLibSharp": "3.24.24.38",
+          "GdkSharp": "3.24.24.38",
+          "GioSharp": "3.24.24.38",
+          "PangoSharp": "3.24.24.38"
+        },
+        "compile": {
+          "lib/netstandard2.0/GtkSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GtkSharp.dll": {}
+        },
+        "build": {
+          "build/GtkSharp.targets": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -25,10 +102,112 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "PangoSharp/3.24.24.38": {
+        "type": "package",
+        "dependencies": {
+          "CairoSharp": "3.24.24.38",
+          "GLibSharp": "3.24.24.38"
+        },
+        "compile": {
+          "lib/netstandard2.0/PangoSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/PangoSharp.dll": {}
+        }
+      },
+      "Xilium.CefGlue/110.0.29": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Xilium.CefGlue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Xilium.CefGlue.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AtkSharp/3.24.24.38": {
+      "sha512": "Ds4FnipE+lLMF2K0GdXkI2wp3rIu+X6PaPwTFwGlbVVKO8/hKH15CGphpnQhr4w171ZKt01AmyZ+b3I2J8Wfsw==",
+      "type": "package",
+      "path": "atksharp/3.24.24.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "atksharp.3.24.24.38.nupkg.sha512",
+        "atksharp.nuspec",
+        "lib/net6.0/AtkSharp.dll",
+        "lib/netstandard2.0/AtkSharp.dll"
+      ]
+    },
+    "CairoSharp/3.24.24.38": {
+      "sha512": "Ai6NvehIuGzqTEvBBBxvnBWQlKv/2+p37UqXgWWoYxjQ8v2JqfmpYAenNSfgybi9NIad3aOttMk01xpAJlRT0Q==",
+      "type": "package",
+      "path": "cairosharp/3.24.24.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cairosharp.3.24.24.38.nupkg.sha512",
+        "cairosharp.nuspec",
+        "lib/net6.0/CairoSharp.dll",
+        "lib/netstandard2.0/CairoSharp.dll"
+      ]
+    },
+    "GdkSharp/3.24.24.38": {
+      "sha512": "Hzi/gebFcom/dRp8gqe8u7N8mCcj70C2MCz2lraWWB9iOLKFS8glfTfVesH0OhTwnKBnk7Cv3T32DTZHESZmKw==",
+      "type": "package",
+      "path": "gdksharp/3.24.24.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gdksharp.3.24.24.38.nupkg.sha512",
+        "gdksharp.nuspec",
+        "lib/net6.0/GdkSharp.dll",
+        "lib/netstandard2.0/GdkSharp.dll"
+      ]
+    },
+    "GioSharp/3.24.24.38": {
+      "sha512": "5gK1cESosEezKNSvCECN/IzwB7lv0VXR+ejq5QDdiNM3qHwDtH6PDpY5qP0WkvENtQ1vGkfDlrNYWtf8OhDWaA==",
+      "type": "package",
+      "path": "giosharp/3.24.24.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "giosharp.3.24.24.38.nupkg.sha512",
+        "giosharp.nuspec",
+        "lib/net6.0/GioSharp.dll",
+        "lib/netstandard2.0/GioSharp.dll"
+      ]
+    },
+    "GLibSharp/3.24.24.38": {
+      "sha512": "VahPnOxMae/gEFD5toh5Iw7PWcHaqGH8cmM77iMckWGzPv61c7oNM/mIYOSLCRdVv4i4LIxUHw8M4Zc0tud4Ig==",
+      "type": "package",
+      "path": "glibsharp/3.24.24.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "glibsharp.3.24.24.38.nupkg.sha512",
+        "glibsharp.nuspec",
+        "lib/net6.0/GLibSharp.dll",
+        "lib/netstandard2.0/GLibSharp.dll"
+      ]
+    },
+    "GtkSharp/3.24.24.38": {
+      "sha512": "tHuNB7Dde7VsZvGXCkZJye1ce6Jo/gvJj8EG//Z44/3mE8ebbUYgb1RsMakUhsXI+Y24H83mIf+ooTJ7Sg1Kcw==",
+      "type": "package",
+      "path": "gtksharp/3.24.24.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/GtkSharp.targets",
+        "gtksharp.3.24.24.38.nupkg.sha512",
+        "gtksharp.nuspec",
+        "lib/net6.0/GtkSharp.dll",
+        "lib/netstandard2.0/GtkSharp.dll"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -172,11 +351,31 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "PangoSharp/3.24.24.38": {
+      "sha512": "NpTRGMOJvxJwRIEXV0hyAnFt26mLYwGu70TLCZecXwWgdQx87HWsAUWgzjL8atdExquebSBumKP6cZjkEAQuaA==",
+      "type": "package",
+      "path": "pangosharp/3.24.24.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/PangoSharp.dll",
+        "lib/netstandard2.0/PangoSharp.dll",
+        "pangosharp.3.24.24.38.nupkg.sha512",
+        "pangosharp.nuspec"
+      ]
+    },
+    "Xilium.CefGlue/110.0.29": {
+      "type": "project",
+      "path": "../CefGlue/CefGlue.csproj",
+      "msbuildProject": "../CefGlue/CefGlue.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "GtkSharp >= 3.24.24.38",
+      "NETStandard.Library >= 2.0.3",
+      "Xilium.CefGlue >= 110.0.29"
     ]
   },
   "packageFolders": {
@@ -213,7 +412,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\SVN\\Github\\CefGlue.Gtk\\CefGlue\\CefGlue.csproj": {
+              "projectPath": "E:\\SVN\\Github\\CefGlue.Gtk\\CefGlue\\CefGlue.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -226,6 +429,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "GtkSharp": {
+            "target": "Package",
+            "version": "[3.24.24.38, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
