@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "0pmJZIOpgad7Z5iEWPl8SfZDaMoEvtRGH1EemRi1LAFTySfmnR94KO66ItipOZi6DVj9YP6tTlxm+4cY6hklCw==",
+  "success": true,
+  "projectFilePath": "E:\\SVN\\Github\\CefGlue.Gtk\\CefGlue\\CefGlue.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Micha\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Micha\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.loongnix.cn:5000/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
